@@ -1,0 +1,12 @@
+deploy:
+  provider: heroku
+  api_key: 
+    secure: a6de8b62-7489-4dcb-9374-521a76cb4afd
+    app: heroku-api-cenfo
+    language: java
+    jdk: oraclejdk8
+    run: 
+      - "mvn package"
+      - "mvn install"
+      - "java -jar target/herokuapi-0.0.1-SNAPSHOT.jar"
+    
