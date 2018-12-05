@@ -1,0 +1,6 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://gopovesteban:texacoo96@ds117250.mlab.com:17250/db_server
+    rest:
+      base-path: /api  
