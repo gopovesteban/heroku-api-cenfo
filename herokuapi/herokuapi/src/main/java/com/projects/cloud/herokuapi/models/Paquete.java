@@ -7,7 +7,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Paquete {
 
 	public Paquete(String id, String aerolinea, String vuelo, String fecha, String nombreConsignatario,
-			String cuentaConsignatario, String montoFactura, String nombreTienda) {
+			String cuentaConsignatario, String montoFactura, String nombreTienda, String status) {
 		super();
 		this.id = id;
 		this.aerolinea = aerolinea;
@@ -17,6 +17,7 @@ public class Paquete {
 		this.cuentaConsignatario = cuentaConsignatario;
 		this.montoFactura = montoFactura;
 		this.nombreTienda = nombreTienda;
+		this.status = status;
 	}
 	@Id
 	private String id;
@@ -28,6 +29,7 @@ public class Paquete {
 	private String cuentaConsignatario;
 	private String montoFactura;
 	private String nombreTienda;
+	private String status;
 	
 	
 	
@@ -79,6 +81,12 @@ public class Paquete {
 	}
 	public void setNombreTienda(String nombreTienda) {
 		this.nombreTienda = nombreTienda;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
 	}
 	
 	
